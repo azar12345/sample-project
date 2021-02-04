@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <span color="blue" style="font-size: 30px;cursor: pointer;color: white;margin-top: 0px;" id="name" onclick="openNav()">
+    &#9776;Dashboard
+  </span>
+  <script>
+     function openNav()
+     {
+       document.getElementById("mySidenav").style.width="250px";
+       document.getElementById("name").style.marginLeft="250px";
+       document.getElementById("name").style.transition="1.5s";
+     }
+     function  closeNav()
+     {
+      document.getElementById("mySidenav").style.width="0";
+      document.getElementById("name").style.marginLeft="0";
+     }
+    </script>
+
+<style>
+  body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-color: black;
+
+
+  }
+  .sidenav
+  {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+  }
+  i{
+    padding: 0px 5px;
+    color: #1263ce;
+  }
+  .sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.4s;
+  }
+
+  .sidenav a:hover i{
+    color: white;
+    transition: 1s;
+  }
+  .sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+  }
+  .sidenav .closebtn:hover{
+    background-color: black;
+  }
+  @media screen and (max-width: 460px){
+    .sidenav{padding-top: 15px;}
+    .sidenav a{font-size: 18px;}
+  }
+</style>
+</head>
+<body>
+  <div>
+    <img src="static/image/dash1.jpg" width="100%" height="100%">
+</div>
+  <div class="sidenav" id=mySidenav>
+    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">
+    </a>
+    <a href="#"><i class="fa fa-home"></i>Dash board</a>
+    <a href="invoice.html"><i class="fa fa-cog"></i>Invoice</a>
+    <a href="#"><i class="fa fa-user"></i>Sales</a>
+    <a href="expenses.html"><i class="fa fa-lock"></i>Expenses</a>
+    <a href="#"><i class="fa fa-user"></i>Report</a>
+    <a href="#"><i class="fa fa-address-book"></i>Accounts</a>
+    <a href="#"><i class="fa fa-image"></i>Inventory</a>
+    </div>
+
+</body>
+</html>
